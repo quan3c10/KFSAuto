@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>1</configVersion>
+    <robotExecEnvironment path="C:\OneDrive\Documents\Python36" interpreter="Python"/>
+    <relativeTo>WORKSPACE</relativeTo>
+    <referencedLibrary type="PYTHON" name="SeleniumLibrary" path="C:/OneDrive/Documents/Python36/lib/site-packages"/>
+    <referencedLibrary type="PYTHON" name="AppiumLibrary" path="C:/OneDrive/Documents/Python36/lib/site-packages"/>
+    <referencedLibrary type="PYTHON" name="REST" path="C:/OneDrive/Documents/Python36/Lib/site-packages"/>
+    <referencedLibrary type="PYTHON" name="CustomSeleniumLibrary" path="C:/OneDrive/Documents/Automation/KFS-Robot/Pylibs"/>
+    <referencedLibrary type="PYTHON" name="LegacyWebService" path="C:/OneDrive/Documents/Automation/KFS-Robot/Pylibs"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+    <isReferencedLibrariesAutoReloadEnabled>true</isReferencedLibrariesAutoReloadEnabled>
+    <isReferencedLibrariesAutoDiscoveringEnabled>true</isReferencedLibrariesAutoDiscoveringEnabled>
+    <isLibrariesAutoDiscoveringSummaryWindowEnabled>false</isLibrariesAutoDiscoveringSummaryWindowEnabled>
+</projectConfiguration>

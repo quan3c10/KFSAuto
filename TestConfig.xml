@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<!-- ========================================================= -->
+	<!-- ================ CHANGE THIS INFORMATION ================ -->
+	<!-- ========================================================= -->
+
+	<!-- KFS Server Parameters -->
+	<Browser>gc</Browser>
+	<KFSServer>172.26.1.61</KFSServer>
+	<BuildNumber>4.1.1.14.0.5409</BuildNumber>
+	<CaptureServerPath>\\KC10\CaptureSV</CaptureServerPath>
+	<KFSSharedPath>\\KC10\CaptureSV\KFS4.1</KFSSharedPath>
+	<!-- <CaptureServerPath>c:\ProgramData\Kofax\Capture</CaptureServerPath> -->
+	<!-- <KFSSharedPath>c:\ProgramData\Kofax\Capture\KFS35</KFSSharedPath> -->
+
+	<!-- KFS Server Installation Parameters -->
+	<KFSInstallFolder>C:\Program Files (x86)\Kofax\Front Office Server 4.1</KFSInstallFolder>
+	<KFSServiceAccountType>Windows User</KFSServiceAccountType>
+	<!-- <KFSServiceAccountType>Local System</KFSServiceAccountType> -->
+	<KFSServiceUser>HNKFS\Administrator</KFSServiceUser>
+	<KFSServiceUserPassword>kofax@01</KFSServiceUserPassword>
+	<MFPEmulatorPath>C:\MFP Emulator</MFPEmulatorPath>
+
+
+	<!-- KFS Database Parameters -->
+	<!-- see bottom of page for examples -->
+	<KFSDatabase>Standard</KFSDatabase>
+	<KFSDatabaseHost/>
+	<KFSDatabaseName/>
+	<KFSDatabasePort/>
+	<KFSDatabaseConnectionString/>
+	<KFSDatabaseAuthentication/>
+	<KFSDatabaseType/>
+	<KFSDatabaseUsername/>
+	<KFSDatabasePassword/>
+
+	<!-- *** KFS Users and User Groups *** -->
+
+	<!-- Admin User -->
+	<KFSAdminUser>admin</KFSAdminUser>
+	<KFSAdminUserName>Administrator</KFSAdminUserName>
+	<KFSAdminPassword>k00fax</KFSAdminPassword>
+
+	<!-- User Group 1 and its member -->
+	<KFSUserGroup>Group1</KFSUserGroup>
+	<KFSUser>KCAuto01</KFSUser>
+	<KFSUserName>KC Auto 01</KFSUserName>
+	<KFSUserPassword>k00fax</KFSUserPassword>
+
+	<!-- User Group 2 and its member -->
+	<KFSUserGroup2>Group2</KFSUserGroup2>
+	<KFSUser2>KCAuto02</KFSUser2>
+	<KFSUser2Name>KC Auto 02</KFSUser2Name>
+	<KFSUser2Password>k00fax</KFSUser2Password>
+
+	<!-- Domain User Group and its member -->
+	<KFSDomainUserGroup>HNKFS\Group1</KFSDomainUserGroup>
+	<KFSDomainUser>HNKFS\Auto01</KFSDomainUser>
+	<KFSDomainUserName>Auto01</KFSDomainUserName>
+	<KFSDomainUserPassword>k00fax</KFSDomainUserPassword>
+
+	<!-- 
+	Note:  UserID of KFSDomainUSer2 MUST BE the same as KFSUser1 to satisfy 
+	requirement of one of the test cases.
+	-->
+	<KFSDomainUserGroup2>HNKFS\Group2</KFSDomainUserGroup2>
+	<KFSDomainUser2>HNKFS\KCAuto01</KFSDomainUser2>
+	<KFSDomainUser2Name>KC Auto 01</KFSDomainUser2Name>
+	<KFSDomainUser2Password>k00fax</KFSDomainUser2Password>
+
+
+	<!-- *** MFP *** -->
+	<MFP1_DeviceName>KC10</MFP1_DeviceName>
+	<MFP1_HostName>KC10</MFP1_HostName>
+	<MFP1_IP>172.26.1.60</MFP1_IP>
+	<MFP1_MACAddress>00-15-5D-01-5E-F1</MFP1_MACAddress>
+	<MFP1_DeviceModel>MFP Emulator</MFP1_DeviceModel>
+
+	<!-- *** Desktop Scanner *** -->
+	<Scanner1_Name>MYSCANNER</Scanner1_Name>
+
+	<!-- *** USB Rediector shared scanner connection parameters *** -->
+	<USBRDR_Path>C:\Program Files\USB Redirector Client\usbrdrltsh.exe</USBRDR_Path>
+	<USBRDR_Server>MyUSBServer</USBRDR_Server>
+	<USBRDR_Port>32032</USBRDR_Port>
+	<USBRDR_VID>04c5</USBRDR_VID>
+	<USBRDR_PID>10e1</USBRDR_PID>
+	<USBRDR_USBPort>3-4</USBRDR_USBPort>
+	
+	<!-- *** SharePoint *** -->
+	<SharePointSiteURL>http://MySharePointURL/MySite</SharePointSiteURL>
+	<SharePointUser>MySPUser</SharePointUser>
+	<SharePointUserPassword>MYSPUserPassword</SharePointUserPassword>
+
+	<!-- *** Email *** -->
+	<EmailUser>MyEmailUser@gmail.com</EmailUser>
+	<EmailUserPassword>MyEmailPassword</EmailUserPassword>
+	<EmailServerType>SMTP</EmailServerType>
+	<EmailHost>smtp.gmail.com</EmailHost>
+	<EmailPort>587</EmailPort>
+	<EmailSSL>true</EmailSSL>
+	
+	<!-- *** Folder *** -->
+	<FolderUser>MyDomain\MyUser</FolderUser>
+	<FolderUserPassword>MyPassword</FolderUserPassword>
+	<FolderPath>\\MyShare\Folder</FolderPath>
+	
+	<!-- *** Fax *** -->
+	<FaxUser>MyKCSUser</FaxUser>
+	<FaxUserPassword>MyKCSPassword</FaxUserPassword>
+	<FaxHost>MYKCSServer</FaxHost>
+	<FaxServerType>Kofax Communication Server</FaxServerType>
+
+	<!-- ========================================================= -->
+	<!-- ========= DO NOT CHANGE THIS INFORMATION ================ -->
+	<!-- ========================================================= -->
+
+	<!-- TestComplete / TestExecute execution parameters -->
+	<DebugMode>DEBUG</DebugMode>
+	<TestOutputDirectory>c:\Automation\TestOutput</TestOutputDirectory>
+	<KFSLocalBuildFolder>C:\KFSInstall\</KFSLocalBuildFolder>
+	<KFSRemoteBuildFolder>\\Sqafs\Kofax Front Office Server\Builds\KFS4.0\</KFSRemoteBuildFolder>
+	<TestResourceDirectory>C:\Automation\KFS Test Suite\Test Resources\</TestResourceDirectory>
+
+	<!-- URLs -->
+	<ThinClientLoginPage>/Kofax/KFS/ThinClient/login.html</ThinClientLoginPage>
+	<ThinClientPage>/Kofax/KFS/ThinClient/</ThinClientPage>
+	<AdminConsoleLoginPage>/Kofax/KFS/Admin/login.html</AdminConsoleLoginPage>
+	<AdminConsolePage>/Kofax/KFS/Admin/</AdminConsolePage>
+
+</TestConfiguration>
+
+<!-- ================================================================================
+		KFS Server Database parameters examples.  Note that although some
+		elements can be left empty if they are not applicable, all elements
+		must be present for all database types
+	
+	Standard:
+	<KFSDatabase>Standard</KFSDatabase>
+	<KFSDatabaseHost/>
+	<KFSDatabaseName/>
+	<KFSDatabasePort/>
+	<KFSDatabaseConnectionString/>
+	<KFSDatabaseAuthentication/>
+	<KFSDatabaseType/>
+	<KFSDatabaseUsername/>
+	<KFSDatabasePassword/>
+	
+	SQL Server:
+	<KFSDatabase>SQL Server</KFSDatabase>
+	<KFSDatabaseHost>MySQLServerHost</KFSDatabaseHost>
+	<KFSDatabaseName>KFS40</KFSDatabaseName>
+	<KFSDatabasePort/>
+	<KFSDatabaseConnectionString/>
+	<KFSDatabaseAuthentication>SQL Server</KFSDatabaseAuthentication> (valid values:  SQL Server or Windows)
+	<KFSDatabaseType/>
+	<KFSDatabaseUsername>MySQLUser</KFSDatabaseUsername>
+	<KFSDatabasePassword>MySQLPassword</KFSDatabasePassword>
+
+	Oracle:
+	<KFSDatabase>Oracle</KFSDatabase>
+	<KFSDatabaseHost>MyOracleHost</KFSDatabaseHost>
+	<KFSDatabasePort>1521</KFSDatabasePort>
+	<KFSDatabaseConnectionString/>
+	<KFSDatabaseAuthentication/>
+	<KFSDatabaseType>SID</KFSDatabaseType> (valid values:  SID or Service Name)
+	<KFSDatabaseName>orcl</KFSDatabaseName> (Use KFSDatabaseName to specify SID or Service Name)
+	<KFSDatabaseUsername>MyOracleUser</KFSDatabaseUsername>
+	<KFSDatabasePassword>MyOraclePassword</KFSDatabasePassword>
+
+	Oracle RAC:
+	<KFSDatabase>Oracle RAC</KFSDatabase>
+	<KFSDatabaseHost/>
+	<KFSDatabaseName/>
+	<KFSDatabasePort/>
+	<KFSDatabaseConnectionString>Enter Connection String Here</KFSDatabaseConnectionString>
+	<KFSDatabaseAuthentication/>
+	<KFSDatabaseType/>
+	<KFSDatabaseUsername>MyOracleRACUser</KFSDatabaseUsername>
+	<KFSDatabasePassword>MyOracleRACPassword</KFSDatabasePassword>
+
+============================================================================================== -->

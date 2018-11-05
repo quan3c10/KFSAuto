@@ -1,0 +1,60 @@
+debug='INFO'
+Browser='gc'
+BuildNumber='4.1.1.11.0.5358'
+HostName='172.26.1.60'
+admin={
+    'UserID':'Admin',
+    'UserName':'Administrator',
+    'Password':'k00fax'
+}
+group1={
+    'group':'Group1',
+    'user':'KCAuto01',
+    'username':'KC Auto 01',
+    'password':'k00fax'
+}
+group2={
+    'group':'Group2',
+    'user':'KCAuto02',
+    'username':'KC Auto 02',
+    'password':'k00fax'
+}
+mfp={
+    'devicename':'',
+    'hostname':'',
+    'ip':'',
+    'mac':'',
+    'model':''
+}
+scanner={
+    'path':'C:\\Program Files\\USB Redirector Client\\usbrdrltsh.exe',
+    'server':'SQA-KFS2-PC',
+    'port':'32032',
+    'vid':'0638',
+    'pid':'0A5A',
+    'usbport':'4-4'
+}
+sharepoint={
+    'siteurl':'http://sqasharepoint13/sites/sqa/sqaautomation',
+    'user':'sqalab\sqaadmin',
+    'password':'K0000fax'
+}
+email={
+    'user':'sqakfs@gmail.com',
+    'password':'K00fax12',
+    'servertype':'SMTP',
+    'host':'smtp.gmail.com',
+    'port':'587',
+    'ssl':True
+}
+folder={
+    'user':'sqalab\sqaadmin',
+    'password':'K0000fax',
+    'path':'\\\sqa-kfs2-pc\\share\\kfs build test'
+}
+fax={
+    'user':'TCTECH',
+    'password':'TCTECH',
+    'host':'VM-ASCFAX-TCOSS',
+    'type':'Kofax Communication Server'
+}
